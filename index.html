@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritages d’or - Product Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video autoplay muted loop playsinline id="bg-video">
+      <source src="https://www.shutterstock.com/shutterstock/videos/1097152805/preview/stock-footage-ajvar-from-sweet-peppers-eggplant-tomatoes-garlic-and-onions-with-spices-wooden-table-balkan.webm" type="video/webm">
+      Your browser does not support the video tag.
+    </video>
+    <div class="bg-overlay"></div>
+    <nav class="navbar">
+        <div class="navbar-brand">Heritages d’or</div>
+        <button class="navbar-toggle" aria-label="Ouvrir le menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="navbar-links">
+            <li><a href="index.html">A propos</a></li>
+            <li><a href="history.html">Histoire</a></li>
+            <li><a href="components.html">Composantes</a></li>
+            <li><a href="production.html">Processus de production</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="about-section" id="A propos">
+            <div class="about-card">
+               
+                <h2>À propos de notre tradition</h2>
+                <p>
+                    Notre tradition est au cœur de tout ce que nous faisons. Elle est bien plus qu’un ensemble de coutumes : c’est une expression vivante de ce que nous sommes, façonnée par des générations et enracinée dans des valeurs qui continuent de rassembler nos communautés. On la retrouve dans la chaleur des réunions familiales, dans les histoires transmises de génération en génération, et dans le soin que nous apportons à tout ce que nous créons, avec nos mains et avec notre cœur.
+                    <br><br>
+                    Notre culture est profondément liée à la terre et au rythme des saisons. Cette connexion nous a appris à apprécier le temps, la patience et l’authenticité. Dans un monde qui évolue rapidement, nous sommes fiers de faire les choses comme il se doit – en honorant le passé tout en avançant avec notre époque. Il y a une vraie beauté dans la tradition, surtout dans ce qui est fait à la main, cultivé localement, et empreint de simplicité. Que ce soit à travers la cuisine traditionnelle, la préservation de l’artisanat local ou la célébration de nos fêtes culturelles, nous nous engageons à faire vivre un héritage riche de sens.
+                    <br><br>
+                    La harissa en est un bel exemple. Derrière cet ingrédient simple se cachent des générations de savoir-faire, de récits et de passion. Préparée avec soin et fierté, elle incarne la richesse de notre culture culinaire et l’âme de ceux qui la produisent. Mais elle ne représente qu’un chapitre d’une histoire bien plus vaste.
+                    <br><br>
+                    À travers chaque tradition que nous perpétuons et chaque produit que nous proposons, c’est une part authentique de nous-mêmes que nous partageons. Notre mission n’est pas seulement de préserver notre héritage, mais de le faire vivre, de le célébrer et d’inviter le monde à le découvrir. Voilà le véritable esprit de notre tradition.
+                </p>
+                
+            </div>
+        </section>
+
+        <!-- Place the video here -->
+        
+
+      
+       
+      <script>
+document.querySelector('.navbar-toggle').onclick = function() {
+    document.querySelector('.navbar-links').classList.toggle('open');
+};
+</script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritages d’or - Histoire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="moving-bg"></div>
+    <nav class="navbar">
+        <div class="navbar-brand">Heritages d’or</div>
+        <button class="navbar-toggle" aria-label="Ouvrir le menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="navbar-links">
+            <li><a href="index.html">A propos</a></li>
+            <li><a href="history.html">Histoire</a></li>
+            <li><a href="components.html">Composantes</a></li>
+            <li><a href="production.html">Processus de production</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <section class="history" id="Histoire">
+            <h2>Histoire</h2>
+            <p>
+                L'introduction des piments au Maghreb remonte au XVe siècle, 
+                lorsque les échanges commerciaux avec les Amériques ont 
+                permis l'arrivée de ce fruit exotique. Depuis lors, les 
+                communautés locales ont adopté ces piments et développé des 
+                méthodes ancestrales de culture adaptées au climat 
+                méditerranéen. Les techniques traditionnelles de séchage au 
+                soleil, transmises de génération en génération, ont joué un rôle 
+                crucial dans la conservation et l'intensification des saveurs 
+                uniques de la harissa, un condiment devenu essentiel dans la 
+                cuisine maghrébine.<br><br>
+                La recette s'est progressivement adaptée aux ingrédients locaux 
+                tunisiens, intégrant des épices telles que le coriandre et le carvi, 
+                qui apportent une profondeur aromatique incomparable. Cette 
+                combinaison a permis de créer une saveur unique et 
+                reconnaissable, qui distingue la harissa tunisienne des autres 
+                variantes régionales. Au fil du temps, la harissa s'est diffusée à 
+                travers toute la Tunisie et les régions voisines, devenant un 
+                symbole culinaire et culturel fort, apprécié tant dans les foyers 
+                que dans la gastronomie internationale.<br><br>
+                La harissa est inscrite officiellement auprès de l'UNESCO en 2020 et approuvée le 1er décembre 2022 au patrimoine culturel immatériel de l’humanité, ceci représente un travail interinstitutionnel national basé sur un 
+                partenariat public-privé pour valoriser un produit 
+                phare de la Tunisie.
+            </p>
+             <img 
+        src="https://www.pomi.us.com/media-2/__sized__/recipes/gallery_item/image/harissa-crop-c0-5__0-5-733x891-70.jpg" 
+        alt="Harissa Preparation" 
+        class="history-img"
+    >
+        </section>
+    </main>
+
+<script>
+document.querySelector('.navbar-toggle').onclick = function() {
+    document.querySelector('.navbar-links').classList.toggle('open');
+};
+</script>
+
+</body>
+</html>
