@@ -212,6 +212,15 @@ ul, ol {
     .navbar-toggle {
         display: flex;
     }
+    .step-card {
+        flex-direction: column;
+        padding: 1rem 0.7rem;
+    }
+    .step-img {
+        margin-left: 0;
+        margin-top: 1rem;
+        max-width: 100%;
+    }
 }
 
 /* Elegant history section styling */
