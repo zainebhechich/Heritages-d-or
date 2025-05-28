@@ -1181,11 +1181,262 @@ img, .step-img img {
         margin-top: 1rem;
         max-width: 100%;
         min-width: 0;
-        min-height: 80px;
     }
 }
 
 /* Add extra space above cards 3, 4, 5, 6, 7 */
 .steps-cards .step-card:nth-child(n+3) {
     margin-top: 2.5rem;
+}
+
+.types-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: center;
+    margin: 2.5rem 0 2rem 0;
+}
+
+.type-card {
+    background: linear-gradient(135deg, #fffdfa 70%, #ffe4e1 100%);
+    border-radius: 22px;
+    box-shadow: 0 6px 32px rgba(215,38,61,0.10), 0 2px 12px rgba(0,0,0,0.07);
+    padding: 2.2rem 1.5rem 1.5rem 1.5rem;
+    max-width: 290px;
+    min-width: 220px;
+    flex: 1 1 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    position: relative;
+    transition: box-shadow 0.2s, transform 0.18s;
+    margin: 0;
+}
+
+.type-card:hover {
+    box-shadow: 0 12px 40px rgba(215,38,61,0.18), 0 4px 18px rgba(0,0,0,0.12);
+    transform: translateY(-6px) scale(1.025);
+}
+
+.type-img {
+    width: 120px;
+    height: 80px;
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ffe4e1 60%, #fffdfa 100%);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(215,38,61,0.07);
+}
+
+.type-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+    display: block;
+}
+
+.type-badge {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    background: linear-gradient(90deg, #d7263d 0%, #ff8c00 100%);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(215,38,61,0.12);
+    letter-spacing: 1px;
+}
+
+.type-card h4 {
+    color: #d7263d;
+    margin-bottom: 0.7rem;
+    font-size: 1.18rem;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.type-card p {
+    color: #333;
+    font-size: 1.04rem;
+    margin: 0;
+    text-align: center;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 900px) {
+    .types-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .type-card {
+        max-width: 98vw;
+        width: 100%;
+        min-width: 0;
+    }
+    .type-img {
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+    }
+}
+
+/* Responsive: stack type cards on small screens */
+@media (max-width: 700px) {
+    .types-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+    }
+    .type-card {
+        width: 95vw;
+        max-width: 400px;
+        min-width: 0;
+    }
+    .type-img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+}
+
+/* Responsive: General container and section adjustments */
+@media (max-width: 900px) {
+    .container,
+    .evolution,
+    .preparation,
+    .harissa-details,
+    .ingredients-elegant,
+    .components-card,
+    .tradition-card,
+    .history {
+        max-width: 98vw !important;
+        padding: 1.2rem 0.7rem !important;
+        border-radius: 14px !important;
+        font-size: 1rem !important;
+    }
+    .steps-cards {
+        gap: 1.2rem !important;
+    }
+    .step-card {
+        flex-direction: column !important;
+        padding: 1rem 0.7rem !important;
+        border-radius: 10px !important;
+    }
+    .step-img {
+        margin-left: 0 !important;
+        margin-top: 1rem !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+    }
+    .history-flex {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 1rem !important;
+    }
+    .history-img {
+        max-width: 95vw !important;
+        height: 220px !important;
+    }
+    .ingredients-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.2rem !important;
+    }
+    .ingredient-card {
+        min-height: 0 !important;
+        padding: 1rem 0.7rem !important;
+    }
+    .about-card {
+        padding: 1.2rem 0.7rem !important;
+        border-radius: 14px !important;
+    }
+    .about-img {
+        max-width: 98vw !important;
+        height: 180px !important;
+    }
+}
+
+/* Responsive: Even smaller screens */
+@media (max-width: 700px) {
+    .container,
+    .evolution,
+    .preparation,
+    .harissa-details,
+    .ingredients-elegant,
+    .components-card,
+    .tradition-card,
+    .history {
+        padding: 0.7rem 0.2rem !important;
+        border-radius: 8px !important;
+        font-size: 0.98rem !important;
+    }
+    h1, h2, h3 {
+        font-size: 1.2rem !important;
+    }
+    .navbar {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        padding: 1rem !important;
+    }
+    .navbar-links {
+        flex-direction: column !important;
+        gap: 1rem !important;
+        width: 100% !important;
+    }
+    .about-img,
+    .history-img {
+        height: 120px !important;
+    }
+    .types-cards {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 1.2rem !important;
+    }
+    .type-card {
+        width: 95vw !important;
+        max-width: 400px !important;
+        min-width: 0 !important;
+    }
+    .type-img {
+        width: 100% !important;
+        max-width: 320px !important;
+        height: auto !important;
+    }
+    .steps-cards {
+        gap: 1.2rem !important;
+    }
+    .step-card {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        padding: 1rem 0.7rem !important;
+        border-radius: 10px !important;
+    }
+    .step-img {
+        margin-left: 0 !important;
+        margin-top: 1rem !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        min-height: 80px !important;
+    }
+}
+
+/* Responsive: Images always scale */
+img, .step-img img, .type-img img, .about-img, .history-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
